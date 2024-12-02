@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+
+<!-- moodal -->
+
+
+  <section class=" test">
+
+    <div class="lightHouse d-flex justify-content-center align-items-center  d-none">
+
+
+
+      <div class="modall w-50 mx-auto bg-white p-4 position-relative" >
+        <button class="close btn" id="closeBtn"> <i class="fa-solid fa-xmark "></i></button>
+        <i class="fa-solid fa-circle one"></i> <i class="fa-solid fa-circle two"></i> <i class="fa-solid fa-circle three"></i>
+        
+        <h5 class="fw-bold">Site Name or Url is not valid, Please follow the rules below :</h5>
+
+    <p class="ps-1"> <i class="fa-solid fa-arrow-right pe-2"></i>Site name must contain at least 3 characters</p>
+    <p class="ps-1"> <i class="fa-solid fa-arrow-right pe-2" ></i>Site URL must be a valid one</p>
+    
+        
+      </div>
+    </div>
+    
+<!-- end modal -->
+    <div class="container">
+      <div class="text-center text-capitalize py-5  hero">
+        <h1>Bookmarker</h1>
+      </div>
+
+
+      <div class=" text-center text-capitalize py-2 pt-3 hero">
+        <h3>
+          <i class="fa-solid fa-bookmark   "></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark "></i>
+
+        </h3>
+        <div class="inputs   d-flex  flex-column justify-content-start align-items-start">
+          <label for="name"> <i class="fa-solid fa-book-bookmark"></i>site name</label>
+          <input oninput="validationUrl()"      type="text" name="name" id="name" class="form-control">
+
+          <label for="url"> <i class="fa-solid fa-paperclip"></i>Url site</label>
+          <input type="url" name="url" id="urlInput" class="form-control">
+
+        </div>
+
+        <button  onclick="addBookmark()"    id="submit"    class="btn btn-danger my-3 px-3">submit</button>
+        <button    id="update"       class="btn btn-warning  my-3 px-3 d-none">update</button>
+
+      </div>
+
+
+    <div class="w-100   d-flex justify-content-center ">
+      <table class="text-center bg-light mt-5 w-100">
+        <thead class=" w-100">
+          <tr class="  ">
+            <th class="text-capitalize mx-5  px-5">Index</th>
+            <th class="text-capitalize mx-5 px-5">website Name</th>
+            <th class="text-capitalize mx-5 px-5">visit</th>
+            <th class="text-capitalize mx-5 px-5" >delet</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+
+
+
+
+
+        </tbody>
+      </table>
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="js/index.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
